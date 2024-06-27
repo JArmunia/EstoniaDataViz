@@ -50,6 +50,7 @@ temp_color_scale = [
 
 # Configurar la aplicación Dash
 app = Dash(__name__)
+server = app.server
 
 # Obtener la lista de fechas únicas
 dates = weather_gdf['datetime'].dt.date.unique()
